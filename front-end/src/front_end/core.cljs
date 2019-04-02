@@ -1,17 +1,16 @@
 (ns front-end.core
-  (:require [reagent.core :as reagent :refer [atom]]))
+  (:require [reagent.core :as reagent :refer [atom]]
+            ["./mymap" :default show-map]))
 
 ;; define your app data so that it doesn't get over-written on reload
 
-(defonce app-state (atom {:text "Hello world!"}))
 
-(defn hello-world []
-  [:div
-   [:h1 (:text @app-state)]
-   [:h3 "Edit this and watch it change!"]])
+(defn display-map []
+  (reagent/create-class {:reagent-render #(vector :div#image-map)
+                         :component-did-mount #(show-map)}))
 
 (defn start []
-  (reagent/render-component [hello-world]
+  (reagent/render-component [display-map]
                             (. js/document (getElementById "app"))))
 
 (defn ^:export init []
