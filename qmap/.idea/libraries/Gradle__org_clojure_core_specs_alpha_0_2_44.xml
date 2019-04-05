@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.clojure:core.specs.alpha:0.2.44">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.clojure/core.specs.alpha/0.2.44/6027ceb1d1ae70a6a3fb1a8da2144632fa688604/core.specs.alpha-0.2.44.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.clojure/core.specs.alpha/0.2.44/993fa305c2281cd2b77dcbc410bdcc5c67c8686/core.specs.alpha-0.2.44-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

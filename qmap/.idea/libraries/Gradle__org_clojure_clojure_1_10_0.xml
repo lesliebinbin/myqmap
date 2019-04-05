@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.clojure:clojure:1.10.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.clojure/clojure/1.10.0/383381021e03691dff101a9b12accb79e9a4e10/clojure-1.10.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.clojure/clojure/1.10.0/6856dce841d832fe5850a317eafc92b117ed77ae/clojure-1.10.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

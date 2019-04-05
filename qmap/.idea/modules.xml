@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/back-end/back-end.iml" filepath="$PROJECT_DIR$/.idea/modules/back-end/back-end.iml" group="qmap/back-end" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/back-end/back-end_dev.iml" filepath="$PROJECT_DIR$/.idea/modules/back-end/back-end_dev.iml" group="qmap/back-end" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/back-end/back-end_main.iml" filepath="$PROJECT_DIR$/.idea/modules/back-end/back-end_main.iml" group="qmap/back-end" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/back-end/back-end_test.iml" filepath="$PROJECT_DIR$/.idea/modules/back-end/back-end_test.iml" group="qmap/back-end" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/front-end/front-end.iml" filepath="$PROJECT_DIR$/.idea/modules/front-end/front-end.iml" group="qmap/front-end" />
+      <module fileurl="file://$PROJECT_DIR$/qmap.iml" filepath="$PROJECT_DIR$/qmap.iml" group="qmap" />
+    </modules>
+  </component>
+</project>
