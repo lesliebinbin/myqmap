@@ -9,9 +9,9 @@ return module$front_end$mymap.default();
 })], null));
 });
 front_end.core.start = (function front_end$core$start(){
-var G__25884 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [front_end.core.display_map], null);
-var G__25885 = document.getElementById("app");
-return (reagent.core.render_component.cljs$core$IFn$_invoke$arity$2 ? reagent.core.render_component.cljs$core$IFn$_invoke$arity$2(G__25884,G__25885) : reagent.core.render_component.call(null,G__25884,G__25885));
+var G__25890 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [front_end.core.display_map], null);
+var G__25891 = document.getElementById("app");
+return (reagent.core.render_component.cljs$core$IFn$_invoke$arity$2 ? reagent.core.render_component.cljs$core$IFn$_invoke$arity$2(G__25890,G__25891) : reagent.core.render_component.call(null,G__25890,G__25891));
 });
 front_end.core.init = (function front_end$core$init(){
 return front_end.core.start();
