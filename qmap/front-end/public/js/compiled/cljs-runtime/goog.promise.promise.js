@@ -106,7 +106,7 @@ goog.Promise.returnEntry_ = function(entry) {
  @param {VALUE=} opt_value
  @return {RESULT}
  @template VALUE
- @template RESULT := type("goog.Promise",cond(isUnknown(VALUE),unknown(),mapunion(VALUE,V=>cond(isTemplatized(V)&&sub(rawTypeOf(V),"IThenable"),templateTypeOf(V,0),cond(sub(V,"Thenable"),unknown(),V))))) =:
+ @template RESULT := type("goog.Promise",cond(isUnknown(VALUE),unknown(),mapunion(VALUE,(V)=>cond(isTemplatized(V)&&sub(rawTypeOf(V),"IThenable"),templateTypeOf(V,0),cond(sub(V,"Thenable"),unknown(),V))))) =:
  */
 goog.Promise.resolve = function(opt_value) {
   if (opt_value instanceof goog.Promise) {

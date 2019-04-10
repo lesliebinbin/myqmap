@@ -16,7 +16,7 @@ goog.Thenable = function() {
  @param {THIS=} opt_context
  @return {RESULT}
  @template VALUE,THIS
- @template RESULT := type("goog.Promise",cond(isUnknown(VALUE),unknown(),mapunion(VALUE,V=>cond(isTemplatized(V)&&sub(rawTypeOf(V),"IThenable"),templateTypeOf(V,0),cond(sub(V,"Thenable"),unknown(),V))))) =:
+ @template RESULT := type("goog.Promise",cond(isUnknown(VALUE),unknown(),mapunion(VALUE,(V)=>cond(isTemplatized(V)&&sub(rawTypeOf(V),"IThenable"),templateTypeOf(V,0),cond(sub(V,"Thenable"),unknown(),V))))) =:
  */
 goog.Thenable.prototype.then = function(opt_onFulfilled, opt_onRejected, opt_context) {
 };

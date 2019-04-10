@@ -1,28 +1,13 @@
-# {{name}}
+# Development Traps
 
-## Run
+> 1. For pure cljs without javascript, it is ok to make the compiler-options :advance,
+>    however, with javascript this options should be avoid because json object like {abc: "123"}
+>    it is likely to be optimize into {a: "123"}
 
-``` shell
-yarn install
+> 1. Always use python -m SimpleHTTPServer to Test the release version instead of the vscode live server
 
-yarn watch
-```
+> 1. in webpack targetLibrary should be commonjs which really resolves a lot, such as cljs and js cannot import es5 compiled files
 
-## Clean
+> 1. in package.json remember to remove ^ in the package version
 
-``` shell
-yarn clean
-```
-
-## Release
-
-``` shell
-yarn release
-```
-
-## License
-
-Copyright © 2017 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+> 1. shadow-cljs 2.8.23 is stable use it
