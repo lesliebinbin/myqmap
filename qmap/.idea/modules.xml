@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/back-end/back-end_main.iml" filepath="$PROJECT_DIR$/.idea/modules/back-end/back-end_main.iml" group="qmap/back-end" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/back-end/back-end_test.iml" filepath="$PROJECT_DIR$/.idea/modules/back-end/back-end_test.iml" group="qmap/back-end" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/front-end/front-end.iml" filepath="$PROJECT_DIR$/.idea/modules/front-end/front-end.iml" group="qmap/front-end" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/front-end-jsx/front-end-jsx.iml" filepath="$PROJECT_DIR$/.idea/modules/front-end-jsx/front-end-jsx.iml" group="qmap/front-end-jsx" />
       <module fileurl="file://$PROJECT_DIR$/qmap.iml" filepath="$PROJECT_DIR$/qmap.iml" group="qmap" />
     </modules>
   </component>

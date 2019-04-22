@@ -3,7 +3,6 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../../front-end">
-      <sourceFolder url="file://$MODULE_DIR$/../../../front-end/src/cljs" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/../../../front-end/.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/../../../front-end/build" />
     </content>

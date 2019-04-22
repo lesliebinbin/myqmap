@@ -11,7 +11,10 @@ plugins {
     id 'gradle-clojure.clojure' version '0.4.0'
     // Apply the application plugin to add support for building an application
     id 'application'
+    id 'org.springframework.boot' version '2.1.4.RELEASE'
 }
+classes.dependsOn compileClojure
+apply plugin: 'io.spring.dependency-management'
 
 clojure {
     builds {
@@ -21,12 +24,19 @@ clojure {
     }
 }
 
+sourceCompatibility = '1.8'
+
 dependencies {
     // This dependency is found on compile classpath of this component and consumers.
     implementation 'org.clojure:clojure:1.10.0'
     // Use JUnit test framework
-    testImplementation 'junit:junit:4.12'
+    //  testImplementation 'junit:junit:4.12'
+    //   implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    runtimeOnly 'org.springframework.boot:spring-boot-devtools'
+    // runtimeOnly 'mysql:mysql-connector-java'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
 // Define the main class for the application
-mainClassName = 'qmap.core'
+mainClassName = 'au.edu.uq.QmapApplication'
