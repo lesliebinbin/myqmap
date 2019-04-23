@@ -1,7 +1,0 @@
-node_modules/*
-front-end.iml
-.idea
-.shadow-cljs
-.classpath
-.project
-yarn.lock
