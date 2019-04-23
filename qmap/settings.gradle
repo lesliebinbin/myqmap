@@ -13,4 +13,4 @@ pluginManagement {
 }
 rootProject.name = 'qmap'
 rootProject.name = 'qmap'
-include 'front-end', 'back-end', 'front-end-jsx'
+include 'back-end', 'front-end-jsx'
