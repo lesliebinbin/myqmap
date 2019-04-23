@@ -14,4 +14,11 @@ public class HelloController {
     public String sayHello() {
         return (String) clojureConfig.getClojureFunc("au.edu.uq.core", "hello-from-clojure").invoke();
     }
+
+    @RequestMapping("/excel")
+    public String testExcel() {
+        return (String) clojureConfig
+                .getClojureFunc("au.edu.uq.utils.excel-reader", "read-excel")
+                .invoke("static/seat_plan.xlsx");
+    }
 }

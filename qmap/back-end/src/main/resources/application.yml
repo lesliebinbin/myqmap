@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost/test
+    ainvren
+    username:
+    password:
+  data:
+    mongodb:
+      uri: mongodb://localhost/test
