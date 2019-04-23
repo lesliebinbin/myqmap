@@ -9,3 +9,4 @@ build
 qmap.iml
 .settings
 gradle
+.project
