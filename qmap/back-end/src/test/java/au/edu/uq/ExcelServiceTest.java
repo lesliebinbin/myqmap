@@ -1,5 +1,6 @@
 package au.edu.uq;
 
+import au.edu.uq.services.StaffService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +14,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class ExcelServiceTest {
     @Autowired
     TestRestTemplate template;
+    @Autowired
+    StaffService service;
 
     @Test
     public void testGetAllSheetsFromExcel() {
@@ -20,5 +23,10 @@ public class ExcelServiceTest {
         System.out.println(forEntity.getBody());
         forEntity = template.getForEntity("/excel/seat_plan/Leslie RF", String.class);
         System.out.println(forEntity.getBody());
+    }
+
+    @Test
+    public void testStaffService(){
+        System.out.println(service.getEmailByName("Tom"));
     }
 }
