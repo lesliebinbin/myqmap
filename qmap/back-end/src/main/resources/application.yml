@@ -7,9 +7,9 @@ spring:
   data:
     mongodb:
       uri: mongodb://localhost/test
-  session:
-    store-type: jdbc
-    jdbc:
-      initialize-schema: always
-    timeout:
-      seconds: 900
+  jpa:
+    show-sql: true
+    database-platform: com.enigmabridge.hibernate.dialect.SQLiteDialect
+    hibernate:
+      ddl-auto: update
+debug: false
