@@ -1,5 +1,6 @@
 package au.edu.uq;
 
+import au.edu.uq.domains.Staff;
 import au.edu.uq.services.StaffService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -27,6 +28,11 @@ public class ExcelServiceTest {
 
     @Test
     public void testStaffService(){
-        System.out.println(service.getEmailByName("Tom"));
+        Staff staff = service.getStaffByEmail("tom@uq.edu.au");
+        System.out.println(staff);
+        System.out.println(service.getNameByEmail("tom@uq.edu.au"));
+        System.out.println(service.getPeriodByEmail("tom@uq.edu.au"));
+        System.out.println(service.getLocationByEmail("tom@uq.edu.au"));
+
     }
 }
