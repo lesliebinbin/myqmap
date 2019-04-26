@@ -1,9 +1,15 @@
 spring:
   datasource:
-    driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost/test
+    driverClassName: org.sqlite.JDBC
+    url: jdbc:sqlite:backend.db
     username:
     password:
   data:
     mongodb:
       uri: mongodb://localhost/test
+  session:
+    store-type: jdbc
+    jdbc:
+      initialize-schema: always
+    timeout:
+      seconds: 900

@@ -8,13 +8,13 @@
 
 (defn read-excel
   ([filename] (->>
-                (ss/load-workbook-from-resource filename)
+                (ss/load-workbook-from-resource (str "excels/" filename))
                 ss/sheet-seq
                 (mapv process-sheet)
                 json/generate-string
                 ))
   ([filename sheetname]
-   (->> (ss/load-workbook-from-resource filename)
+   (->> (ss/load-workbook-from-resource (str "excels/" filename))
         (ss/select-sheet sheetname)
         process-sheet
         json/generate-string
